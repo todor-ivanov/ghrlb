@@ -1,3 +1,7 @@
+### **0.0.1rc9 to 0.0.1rc10:**
+  - typo - yaml misallignment causes missing action for step (Todor Ivanov) [a77ab7](https://github.com/todor-ivanov/ghrlb/commit/a77ab73dcd126bf51233c170706d70a8b7cb595d) on master
+
+
 ### **0.0.1rc8 to 0.0.1rc9:**
   - typo (Todor Ivanov) [e18a23](https://github.com/todor-ivanov/ghrlb/commit/e18a23cefdf5ca7eca6764788be06c642fb2ea39) on master
 
