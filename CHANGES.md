@@ -1,3 +1,7 @@
+### **0.0.1rc16 to 0.0.1rc17:**
+  - Use format() to build multi tag string for upload to registry step in build gh/action (Todor Ivanov) [b05359](https://github.com/todor-ivanov/ghrlb/commit/b053591fcd13a171af62ad73d602b63b949c1d5d) on master
+
+
 ### **0.0.1rc15 to 0.0.1rc16:**
   - Test tags condition for upload to registry step in build gh/action (Todor Ivanov) [15e545](https://github.com/todor-ivanov/ghrlb/commit/15e545010d0f592dbfea54f2def545e1e8afedf7) on master
 
