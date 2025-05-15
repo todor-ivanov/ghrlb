@@ -1,3 +1,7 @@
+### **0.0.1rc4 to 0.0.1rc5:**
+  - Protect gh/actions from failing due to not staisfied && logical chains (Todor Ivanov) [0480ef](https://github.com/todor-ivanov/ghrlb/commit/0480ef75638ccec218010a494fd56bbae82a3eb5) on master
+
+
 ### **0.0.1rc3 to 0.0.1rc4:**
   - Revert back to using if statements for setting stable and rc flags (Todor Ivanov) [f88577](https://github.com/todor-ivanov/ghrlb/commit/f88577b8eea740a7305661940ffd72b15bf85309) on master
 
