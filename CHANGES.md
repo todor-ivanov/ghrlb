@@ -1,3 +1,7 @@
+### **0.0.1rc15 to 0.0.1rc16:**
+  - Test tags condition for upload to registry step in build gh/action (Todor Ivanov) [15e545](https://github.com/todor-ivanov/ghrlb/commit/15e545010d0f592dbfea54f2def545e1e8afedf7) on master
+
+
 ### **0.0.1rc14 to 0.0.1rc15:**
   - Test unsatisfied run condition for docker tagging in build gh/action (Todor Ivanov) [0d323b](https://github.com/todor-ivanov/ghrlb/commit/0d323b220676bd2abde7d262d9a543c63da50b12) on master
 
