@@ -91,11 +91,13 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # with:
         upload_url: ${{ fromJSON(steps.is-stable.outputs.match) && steps.create_release.outputs.upload_url || steps.create_prerelease.outputs.upload_url }}
+        tags: ${{ fromJSON(steps.is-rc.outputs.match) && steps.get-ref.outputs.tag , steps.get-ref.outputs.tag-stable || steps.get-ref.outputs.tag }}
         asset_path: ./das2go
         asset_name: das2go
         asset_content_type: application/octet-stream
       run: |
         echo "upload_url: ${{ env.upload_url }}"
+        echo "tags: ${{ env.tags }}"
         if ${{ steps.is-stable.outputs.match }}; then
               echo "docker tag docker.pkg.github.com/dmwm/das2go/das2go:${{steps.get-ref.outputs.tag}} registry.cern.ch/cmsweb/das-server:${{steps.get-ref.outputs.tag}}-stable"
         fi
