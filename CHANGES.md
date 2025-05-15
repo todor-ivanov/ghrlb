@@ -1,3 +1,7 @@
+### **0.0.1rc13 to 0.0.1rc14:**
+  - Test run condition for docker tagging in build gh/action (Todor Ivanov) [840e1f](https://github.com/todor-ivanov/ghrlb/commit/840e1f7afb279c9fd6299e16782b59bf59f4b8b4) on master
+
+
 ### **0.0.1rc12 to 0.0.1rc13:**
   - Typo - missing double quote in gh/action (Todor Ivanov) [48a621](https://github.com/todor-ivanov/ghrlb/commit/48a62158ce3d269300b99f1509ddbdb4afab1416) on master
 
