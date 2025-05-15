@@ -1,3 +1,7 @@
+### **0.0.1rc6 to 0.0.1rc7:**
+  - Fix broken gh/actions tag regular expressions (Todor Ivanov) [30c1c9](https://github.com/todor-ivanov/ghrlb/commit/30c1c9f546634177bef936fbede0faba36cd616c) on master
+
+
 ### **0.0.1rc5 to 0.0.1rc6:**
   - Explicitely set release flags for gh/actions (Todor Ivanov) [e2ad02](https://github.com/todor-ivanov/ghrlb/commit/e2ad0257a2d47509e5fd6afc06ddda82f5a7241e) on master
 
