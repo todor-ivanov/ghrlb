@@ -94,5 +94,5 @@ jobs:
         asset_path: ./das2go
         asset_name: das2go
         asset_content_type: application/octet-stream
-    run: |
+      run: |
         echo "upload_url: ${{ upload_url }}
