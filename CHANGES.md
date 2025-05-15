@@ -1,3 +1,7 @@
+### **0.0.1rc8 to 0.0.1rc9:**
+  - typo (Todor Ivanov) [e18a23](https://github.com/todor-ivanov/ghrlb/commit/e18a23cefdf5ca7eca6764788be06c642fb2ea39) on master
+
+
 ### **0.0.1rc7 to 0.0.1rc8:**
   - Add condition to upload gh/actions (Todor Ivanov) [559512](https://github.com/todor-ivanov/ghrlb/commit/559512b77085379926d01fb28091f3ca7b77a2f1) on master
 
