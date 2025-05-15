@@ -1,3 +1,7 @@
+### **0.0.1rc14 to 0.0.1rc15:**
+  - Test unsatisfied run condition for docker tagging in build gh/action (Todor Ivanov) [0d323b](https://github.com/todor-ivanov/ghrlb/commit/0d323b220676bd2abde7d262d9a543c63da50b12) on master
+
+
 ### **0.0.1rc13 to 0.0.1rc14:**
   - Test run condition for docker tagging in build gh/action (Todor Ivanov) [840e1f](https://github.com/todor-ivanov/ghrlb/commit/840e1f7afb279c9fd6299e16782b59bf59f4b8b4) on master
 
