@@ -96,3 +96,6 @@ jobs:
         asset_content_type: application/octet-stream
       run: |
         echo "upload_url: ${{ env.upload_url }}"
+        if ${{ steps.is-rc.outputs.match }}; then
+              echo "docker tag docker.pkg.github.com/dmwm/das2go/das2go:${{steps.get-ref.outputs.tag}} registry.cern.ch/cmsweb/das-server:${{steps.get-ref.outputs.tag}}-stable"
+        fi
