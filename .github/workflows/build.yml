@@ -1,7 +1,7 @@
 name: Build
 env:
-  tag_pat_st: 'v?[0-9]+.[0-9]+.[0-9]+'
-  tag_pat_rc: 'v?[0-9]+.[0-9]+.[0-9]+rc[0-9]+'
+  tag_regex_st: '^v?[0-9]+.[0-9]+.[0-9]+$'
+  tag_regex_rc: '^v?[0-9]+.[0-9]+.[0-9]+rc[0-9]+$'
 on:
   push:
     tags:
@@ -25,18 +25,18 @@ jobs:
     - name: Set Stable Flag
       id: is-stable
       run: |
-        if [[ ${{ steps.get-ref.outputs.tag }} =~ ^${{ env.tag_pat_st }}$ ]]; then
+        [[ ${{ steps.get-ref.outputs.tag }} =~ ${{ env.tag_regex_st }} ]] && {
               echo "match=true" >> $GITHUB_OUTPUT
               echo "Build triggered on stable release"
-        fi
+        }
 
     - name: Set RC Flag
       id: is-rc
       run: |
-        if [[ ${{ steps.get-ref.outputs.tag }} =~ ^${{ env.tag_pat_rc }}$ ]]; then
+        [[ ${{ steps.get-ref.outputs.tag }} =~ ${{ env.tag_regex_rc }} ]] && {
               echo "match=true" >> $GITHUB_OUTPUT
               echo "Build triggered on stable release"
-        fi
+        }
 
     - name: Set up Go
       uses: actions/setup-go@v2
@@ -48,7 +48,8 @@ jobs:
 
     - name: Build
       run: |
-        make
+        $${{ steps.is-rc.outputs.match }} && echo "Building a release candidate ..."
+        $${{ steps.is-stable.outputs.match }} && echo "Building a stable release ..."
 
     - name: Create Release
       id: create_release
