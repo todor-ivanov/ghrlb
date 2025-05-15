@@ -1,3 +1,7 @@
+### **0.0.1rc7 to 0.0.1rc8:**
+  - Add condition to upload gh/actions (Todor Ivanov) [559512](https://github.com/todor-ivanov/ghrlb/commit/559512b77085379926d01fb28091f3ca7b77a2f1) on master
+
+
 ### **0.0.1rc6 to 0.0.1rc7:**
   - Fix broken gh/actions tag regular expressions (Todor Ivanov) [30c1c9](https://github.com/todor-ivanov/ghrlb/commit/30c1c9f546634177bef936fbede0faba36cd616c) on master
 
