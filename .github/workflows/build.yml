@@ -62,10 +62,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # with:
-      #   tag_name: ${{ github.ref }}
-      #   release_name: Release ${{ github.ref }}
-      #   draft: false
-      #   prerelease: false
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        draft: false
+        prerelease: false
       run: |
         echo "upload_url=url-from-create-release" >> $GITHUB_OUTPUT
 
@@ -77,10 +77,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # with:
-      #   tag_name: ${{ github.ref }}
-      #   release_name: Release ${{ github.ref }}
-      #   draft: false
-      #   prerelease: true
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        draft: false
+        prerelease: true
       run: |
         echo "upload_url=url-from-create-prerelease" >> $GITHUB_OUTPUT
 
@@ -89,10 +89,10 @@ jobs:
       # uses: actions/upload-release-asset@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
+      # with:
         upload_url: ${{ fromJSON(steps.is-stable.outputs.match) && steps.create_release.outputs.upload_url || steps.create_prerelease.outputs.upload_url }}
         asset_path: ./das2go
         asset_name: das2go
         asset_content_type: application/octet-stream
       run: |
-        echo "upload_url: ${{ upload_url }}
+        echo "upload_url: ${{ env.upload_url }}
