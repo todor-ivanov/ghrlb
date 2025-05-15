@@ -25,18 +25,18 @@ jobs:
     - name: Set Stable Flag
       id: is-stable
       run: |
-        [[ ${{ steps.get-ref.outputs.tag }} =~ ${{ env.tag_regex_st }} ]] && {
+        if [[ ${{ steps.get-ref.outputs.tag }} =~ ${{ env.tag_regex_st }} ]]; then
               echo "match=true" >> $GITHUB_OUTPUT
               echo "Build triggered on stable release"
-        }
+        fi
 
     - name: Set RC Flag
       id: is-rc
       run: |
-        [[ ${{ steps.get-ref.outputs.tag }} =~ ${{ env.tag_regex_rc }} ]] && {
+        if [[ ${{ steps.get-ref.outputs.tag }} =~ ${{ env.tag_regex_rc }} ]]; then
               echo "match=true" >> $GITHUB_OUTPUT
               echo "Build triggered on stable release"
-        }
+        fi
 
     - name: Set up Go
       uses: actions/setup-go@v2
