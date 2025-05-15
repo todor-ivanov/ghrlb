@@ -1,3 +1,7 @@
+### **0.0.1rc12 to 0.0.1rc13:**
+  - Typo - missing double quote in gh/action (Todor Ivanov) [48a621](https://github.com/todor-ivanov/ghrlb/commit/48a62158ce3d269300b99f1509ddbdb4afab1416) on master
+
+
 ### **0.0.1rc11 to 0.0.1rc12:**
   - Fix run: and with: syntax (Todor Ivanov) [fe2583](https://github.com/todor-ivanov/ghrlb/commit/fe2583a36ce21e1df5d3d5bf8a41b18dd47c6548) on master
 
