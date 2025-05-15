@@ -66,7 +66,7 @@ jobs:
         release_name: Release ${{ github.ref }}
         draft: false
         prerelease: false
-     run: |
+      run: |
         echo "upload_url=url-from-create-release" >> $GITHUB_OUTPUT
 
 
