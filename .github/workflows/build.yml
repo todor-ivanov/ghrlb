@@ -61,11 +61,11 @@ jobs:
       # uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
-        draft: false
-        prerelease: false
+      # with:
+      #   tag_name: ${{ github.ref }}
+      #   release_name: Release ${{ github.ref }}
+      #   draft: false
+      #   prerelease: false
       run: |
         echo "upload_url=url-from-create-release" >> $GITHUB_OUTPUT
 
@@ -76,11 +76,11 @@ jobs:
       # uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
-        draft: false
-        prerelease: true
+      # with:
+      #   tag_name: ${{ github.ref }}
+      #   release_name: Release ${{ github.ref }}
+      #   draft: false
+      #   prerelease: true
       run: |
         echo "upload_url=url-from-create-prerelease" >> $GITHUB_OUTPUT
 
