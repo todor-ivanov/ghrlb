@@ -1,3 +1,7 @@
+### **0.0.1rc5 to 0.0.1rc6:**
+  - Explicitely set release flags for gh/actions (Todor Ivanov) [e2ad02](https://github.com/todor-ivanov/ghrlb/commit/e2ad0257a2d47509e5fd6afc06ddda82f5a7241e) on master
+
+
 ### **0.0.1rc4 to 0.0.1rc5:**
   - Protect gh/actions from failing due to not staisfied && logical chains (Todor Ivanov) [0480ef](https://github.com/todor-ivanov/ghrlb/commit/0480ef75638ccec218010a494fd56bbae82a3eb5) on master
 
