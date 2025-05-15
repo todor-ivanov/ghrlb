@@ -48,8 +48,8 @@ jobs:
 
     - name: Build
       run: |
-        $${{ steps.is-rc.outputs.match }} && echo "Building a release candidate ..."
-        $${{ steps.is-stable.outputs.match }} && echo "Building a stable release ..."
+        ${{ steps.is-rc.outputs.match }} && echo "Building a release candidate ..." || true
+        ${{ steps.is-stable.outputs.match }} && echo "Building a stable release ..." || true
 
     - name: Create Release
       id: create_release
