@@ -1,3 +1,7 @@
+### **0.0.1rc11 to 0.0.1rc12:**
+  - Fix run: and with: syntax (Todor Ivanov) [fe2583](https://github.com/todor-ivanov/ghrlb/commit/fe2583a36ce21e1df5d3d5bf8a41b18dd47c6548) on master
+
+
 ### **0.0.1rc10 to 0.0.1rc11:**
   - Avoid using run: and with: clause in the same gh/action (Todor Ivanov) [bc947d](https://github.com/todor-ivanov/ghrlb/commit/bc947d07234c111e67418cb917690f503b255b46) on master
 
