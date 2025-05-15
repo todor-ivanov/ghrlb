@@ -5,8 +5,8 @@ env:
 on:
   push:
     tags:
-      - ${{ env.tag_pat_st }}
-      - ${{ env.tag_pat_rc }}
+      - 'v?[0-9]+.[0-9]+.[0-9]+'
+      - 'v?[0-9]+.[0-9]+.[0-9]+rc[0-9]+'
 
 jobs:
 
